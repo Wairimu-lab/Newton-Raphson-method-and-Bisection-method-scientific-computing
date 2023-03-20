@@ -1,0 +1,79 @@
+\documentclass{}
+
+\begin{document}
+EQUATION
+ f(x) =x **3 -2*x - 5
+
+BISECTION METHOD
+
+Step 1: Choose the interval a b such that f(a) are opposite signs
+	for ecample f(2) = -1 and  f(3) = 16
+Step 2: Compute the midpont c 
+		(a+b)/2 = c
+
+		e.g. (2+3)/ 2 = 2.5
+Step 3: Evaluate f(c)
+	f(2.5) = 5.625
+Sep 4: If f (c)= 0 , c is the root of f(x) and the algorithm terminates.
+if not 
+Step 5: if f(c) have opposite signs then the root is in the interval a c 
+	set b= c
+	
+	e.g. our interval becomes 2 and 2.5
+	if f(c) and f(b) have opposite signs then the root is in the interval b c so 
+	set a= c
+
+	
+Step 6: Repeat step 2
+
+	
+
+
+
+
+if maximum number of iteration is reached terminate 
+
+with python code
+
+Root found at x = 2.092090
+Execution time: 0.00015 seconds
+count is: 23 in total
+
+
+
+
+NEWTON RAMPASION METHOD
+
+Step 1: Choose an initial guess Xa
+	Xa = 0
+
+Step 2: Evaluate the function f(x) and its derivative f'(x) at Xa
+		If Xa = 0
+	          f(0) = -5
+		f'(0) = -2
+sTEP 3: Compute the next approximation X(n +1)
+	Xa - (f(0) /f'(0)) = 0 - (-5/-2) = -2.5
+Step 4: if it is less than the tolerance then that is the root
+		it is not less that the root
+	if it is not then the new Xa is the computed approximation 
+		-2.5 becomes our new Xa
+Step 5: Go back to step 2
+	if Xa = -2.5
+	f(0) =5.625
+	f'(0) = 16.75
+	 
+
+	X(n+1) = -2.5 - (5.625/1.75) = -2.8358
+	go back to step 2
+
+the function convergrs when the answer is cllose to the root
+
+
+
+with python code
+
+Root found at x =2.092090
+Execution time: 0.00034 seconds
+count is: 11 in total
+
+\end{document}
